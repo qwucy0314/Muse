@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\Qwucy\\.ohos\\config\\default_MUSEA_rlXdye7PkjT7y4ZAtIfW_LK4jGx0qF_9GedK1RXINrg=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001AB3F26980BD4AA9A92B95FA93BA70AEA69CE70FB42EBF743719D58E28055CCDA99CBBFF4CAD16",
+          "profile": "C:\\Users\\Qwucy\\.ohos\\config\\default_MUSEA_rlXdye7PkjT7y4ZAtIfW_LK4jGx0qF_9GedK1RXINrg=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\Qwucy\\.ohos\\config\\default_MUSEA_rlXdye7PkjT7y4ZAtIfW_LK4jGx0qF_9GedK1RXINrg=.p12",
+          "storePassword": "0000001AEC5FDC8677E593E61DCF12D0891DB0D6458F276BC37AE130D8A3ADD34C45E2ED15946F3ED3E3"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.0.2(22)",
+        "compatibleSdkVersion": "6.0.2(22)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
